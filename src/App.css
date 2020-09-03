@@ -2,22 +2,24 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  background-color: #282c34;
+  align-items: center;
   height: 100vh;
 }
 
 .header {
   width: 100%;
-  min-height: 20vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  
   font-size: calc(10px + 2vmin);
-  color: white;
   margin: 0;
 }
 
-.file {
-  margin: 40px;
+.section {
+  margin-bottom: 20px;
+}
+
+.image {
+  max-height: 300px;
 }

@@ -77,19 +77,18 @@ class App extends React.PureComponent {
     return (
       <div className="App">
         <h1 className="header">Thank you for checking out my awesome image converter</h1>
-        <p className="header">Choose target extension</p>
-        <select onChange={this.onSelectChange} value={this.state.selectedExtension}>
+        <p>1.Choose target extension</p><select className="section" onChange={this.onSelectChange} value={this.state.selectedExtension}>
           <option value="jpg">JPEG/JPG</option>
           <option value="gif">GIF</option>
           <option value="bmp">BMP</option>
           <option value="png">PNG</option>
         </select>
-        <input type="file" name="file" onChange={this.onChangeHandler}/>
+        <p>2.Upload file</p><input className="section" type="file" name="file" onChange={this.onChangeHandler}/>
         {
-          this.state.file && <img key={this.state.file} src={this.state.file} />
+          this.state.file && <img className="image" key={this.state.file} src={this.state.file} />
         }
-        <div className="file">
-          <button type="button" onClick={this.onClickHandler}>Convert</button>
+        <div className="section">
+        <p>3.Convert image</p><button type="button" onClick={this.onClickHandler}>Convert</button>
         </div>
       </div>
   
